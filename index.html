@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Am I Secure?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="style.css">
+	
+	</head>
+	
+	<body>
+	
+	<nav class="navbar navbar-default">
+	
+	  <div class="container">
+	  <div class ="navbar-header">
+	  <a class="navbar-brand" href="/">Secure.ly</a>
+	  </div>
+	  </div>
+	  </nav>
+	  
+	  <div class="container">
+	  <div class="jumbotron text-center">
+	  <h1>You might be hacked!!</h1>
+	  <p>Don't believe me ? Check it yourself.!</p>
+      <a class="btn btn-primary" data-toggle="modal" data-target=".email-checker">Check account security</a>
+	  </div>
+	  <div id="message">
+	  </div>
+	  <div class="result" id="result">
+	  </div>
+	  </div>
+	  
+	  <div id="emailModal" class="modal fade email-checker" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="gridSystemModalLabel">Email Checker </h4>
+				</div>
+					<div class="modal-body">
+						<input class="text-center" type="email" placeholder="Enter your address here" id="id_email">
+					</div>
+						<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal"> Close </button>
+						<button type="button" class="btn btn-primary" id="btn_email" onclick="checkEmail();">Check Email</button>
+						</div>
+			</div>
+		</div>
+	</div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+	  
